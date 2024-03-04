@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #A65FFD, #6BE7DC);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerdark {
+    background: #000;
+}
+
+.folder {
+    background: #ffffff;
+    border: 2px solid #fff;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    position: fixed;
+}
+
+.folderdark {
+    background: #1b1b1b;
+}
+
+.profile {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.folderdark .name {
+    color: #fff;
+}
+
+.img {
+    background: #b3b3b3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.info {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plan {
+    font-size: 13px;
+    font-weight: bolder;
+    color: #b3b3b3;
+}
+
+.add {
+    width: 95%;
+    height: 50px;
+    border-radius: 11px;
+    background: #A65FFD;
+    margin: 5px 15px 5px 5px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.foldercont div span:hover {
+    background: #edeef0;
+}
+
+.foldercont div {
+    width: 95%;
+    height: 50px;
+    border-radius: 11px;
+    background: #cca8f8;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foldercont div:hover {
+    background: #b06fff;
+}
+
+.foldercont div h4 {
+    margin: 9px;
+}
+
+.foldercont div span {
+    /* position: absolute; */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    font-size: 32px;
+    color: #555;
+    border-radius: 50%;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    border: 2px solid #d6d6d6;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.to-dodark {
+    background: #1b1b1b;
+}
+
+.sdfsdf {
+    color: #002765;
+}
+
+.h2dark {
+    color: #ffffff;
+}
+
+.to-do h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 11px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+.button {
+    border: none;
+    outline: none;
+    padding: 8px 17px;
+    background: #A65FFD;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 11px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 32px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    overflow-wrap: anywhere;
+}
+
+.to-dodark ul li {
+    color: #dbdbdb;
+}
+
+.to-dodark ul li::before {
+    border: .5px #ffffffe0 solid;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: .5px #1e1e1e4a solid;
+    border-radius: 50%;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background: #A65FFD;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.to-dodark ul li span {
+    color: #ffffff6a;
+}
+
+ul li span:hover {
+    background: #edeef0;
+    color: #565656;
+}
+
+.drop {
+    display: none;
+}
+
+.option {
+    position: relative;
+}
+
+.opt {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    background: #cba0ff;
+    border-radius: 50%;
+}
+
+.oo {
+    display: none;
+}
+
+.optlist {
+    display: block;
+    position: absolute;
+    background: #ffffff;
+    padding: 7px;
+    width: 135px;
+    /* height: px; */
+    border-radius: 11px;
+    box-shadow: 0px 0px 20px 2px #00000968;
+}
+
+.optt {
+    background: #cca8f8;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+.optt:hover {
+    background: #b275fd;
+}
+
+.opt1 {
+    padding: 7px;
+}
+
+.opt3 {
+    padding: 7px;
+    margin-top: 3px;
+    /* color: red; */
+}
+
+.opt2 {
+    padding: 8px;
+    margin-top: 3px;
+    color: red;
+}
+
+@media all and (max-width: 1192px) {
+    .folder {
+        display: flex;
+        width: calc(100% - 25px);
+        align-items: center;
+    }
+
+    .foldercont {
+        display: flex;
+    }
+
+    .add {
+        width: 250px;
+    }
+
+    .foldercont div {
+        width: 100px;
+    }
+
+    .foldercont div h4 {
+        margin: 5px;
+        font-size: 10px;
+    }
+
+    .foldercont div span {
+        width: 25px;
+        height: 25px;
+        font-size: 22px;
+    }
+
+    .folderct {
+        display: flex;
+    }
+}
+
+@media all and (max-width: 808px) {
+    .folderct {
+        display: none;
+    }
+
+    .open {
+        position: absolute;
+        right: 0;
+        top: 42px;
+        /* height: 130px; */
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border-radius: 11px;
+    }
+
+    .foldercont div {
+        width: auto;
+    }
+
+    .foldercont {
+        display: block;
+    }
+
+    .profile {
+        height: 46px;
+    }
+
+    .drop {
+        display: flex;
+        rotate: 90deg;
+        width: 30px;
+        height: 30px;
+        background: #6a6a6a;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        transition: all .5 ease-in-out;
+    }
+
+    .rotate {
+        rotate: -90deg;
+    }
+
+    .drop:hover {
+        background: #555;
+    }
+
+    .add {
+        margin: 13px 15px 5px 5px;
+    }
+
+    .button {
+        padding: 10px 19px;
+    }
+
+    .row {
+        padding-left: 1px;
+    }
+}
+
+@media all and (max-width: 340px) {
+    .button {
+        width: 100%;
+    }
+
+    ul li {
+        font-size: 15px;
+    }
+}

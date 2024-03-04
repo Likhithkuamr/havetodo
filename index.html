@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b7514a30f9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container" id="containerdark">
+
+        <div class="folder" id="folder">
+            <div class="profile">
+                <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-image-vector-social-media-user-icon-potrait-182347582.jpg"
+                    alt="" class="img">
+                <div class="info">
+                    <p class="name" id="editable">Username</p>
+                    <p class="plan">FREE PLAN</p>
+                </div>
+                <div class="option" id="option">
+                    <div class="opt" id="opt"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div class="oo" id="optlist">
+                        <div class="opt1 optt" id="naa">Change Name</div>
+                        <div class="opt3 optt
+                        " id="mode">Change mode</div>
+                        <div class="opt2 optt
+                        " id="del">Delete all</div>
+                    </div>
+                </div>
+            </div>
+            <div class="folderct" id="dropfolder">
+                <button class="add" id="add" onclick="craeteFolder()">CREATE</button>
+                <div class="foldercont" id="foldercont">
+                    <!-- <div></div> -->
+                </div>
+            </div>
+            <div class="drop" id="drop">
+                >
+            </div>
+        </div>
+
+        <div class="to-do" id="to1" style="display:none;">
+            <h2 id="h21dark" class="sdfsdf">Your To-Do List </h2>
+            <div class="row">
+                <input type="message" id="input-box" placeholder="Add your text">
+                <button onclick="AddTask()" class="button">+</button>
+            </div>
+            <ul id="list-cont">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+        <div class="to-do" id="to2" style="display:none;">
+            <h2 id="h22dark" class="sdfsdf">Your To-Do List 2 </h2>
+            <div class="row">
+                <input type="message" id="input-box2" placeholder="Add your text">
+                <button onclick="AddTask2()" class="button">+</button>
+            </div>
+            <ul id="list-cont2">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+        <div class="to-do" id="to3" style="display:none;">
+            <h2 id="h23dark" class="sdfsdf">Your To-Do List 3 </h2>
+            <div class="row" >
+                <input type="message" id="input-box3" placeholder="Add your text">
+                <button onclick="AddTask3()" class="button">+</button>
+            </div>
+            <ul id="list-cont3">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="./darkmode.js"></script>
+</body>
+
+</html>
