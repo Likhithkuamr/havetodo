@@ -152,13 +152,13 @@ function craeteFolder() {
     let div = document.createElement("div");
     div.setAttribute("id", `div${i}`);
     folder.appendChild(div);
-    div.innerHTML = `<h4>New folder (${i})</h4>`;
+    div.innerHTML = `<h4>LIST (${i})</h4>`;
     let span = document.createElement("span");
     span.innerHTML = "\u00d7";
     div.appendChild(span);
     location.reload();
   } else {
-    alert("u need to buy the subscription to add more folder briosgar");
+    alert("u need to buy the subscription to add more folder");
   }
   savefolder();
 }

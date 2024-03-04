@@ -358,8 +358,8 @@ ul li span:hover {
     .drop {
         display: flex;
         rotate: 90deg;
-        width: 30px;
-        height: 30px;
+        width: 41px;
+        height: 28px;
         background: #6a6a6a;
         border-radius: 50%;
         align-items: center;
@@ -386,6 +386,31 @@ ul li span:hover {
 
     .row {
         padding-left: 1px;
+    }
+}
+
+@media all and (max-width: 440px) {
+    .drop {
+        width: 46px;
+    }
+
+    .img {
+        width: 37px;
+        height: 37px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+
+    .plan {
+        font-size: 10px;
+    }
+
+    .add {
+        font-size: 10px;
+        width: 100px;
+        margin: 13px 4px 5px 5px;
     }
 }
 
