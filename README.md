@@ -1,4 +1,4 @@
 # things-todo
 
-# ink to the WEBSITE 👇
+# link to the WEBSITE 👇
 https://havetodo.netlify.app/
